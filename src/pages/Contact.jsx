@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ContactForm from '../components/ContactForm';
-import '../styles/Contact.css';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import ContactForm from "../components/ContactForm";
+import "../styles/Contact.css";
 
 const Contact = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -16,8 +16,8 @@ const Contact = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   const staggerContainer = {
@@ -26,33 +26,38 @@ const Contact = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   // FAQ data
   const faqItems = [
     {
       question: "What areas do you serve?",
-      answer: "We primarily serve the Building City metropolitan area and surrounding communities within a 50-mile radius."
+      answer:
+        "We primarily serve the Building City metropolitan area and surrounding communities within a 50-mile radius.",
     },
     {
       question: "Do you offer free estimates?",
-      answer: "Yes, we provide free initial consultations and estimates for all potential projects."
+      answer:
+        "Yes, we provide free initial consultations and estimates for all potential projects.",
     },
     {
       question: "Are you licensed and insured?",
-      answer: "Absolutely. COBRIXA Construction is fully licensed, bonded, and insured for all types of construction work we perform."
+      answer:
+        "Absolutely. COBRIXA Construction is fully licensed, bonded, and insured for all types of construction work we perform.",
     },
     {
       question: "How long does a typical construction project take?",
-      answer: "Project timelines vary greatly depending on scope and complexity. A small renovation might take a few weeks, while a custom home could take 6-12 months. We provide detailed timelines during the planning phase."
+      answer:
+        "Project timelines vary greatly depending on scope and complexity. A small renovation might take a few weeks, while a custom home could take 6-12 months. We provide detailed timelines during the planning phase.",
     },
     {
       question: "What types of projects do you handle?",
-      answer: "We handle a wide range of construction projects including residential homes, commercial buildings, renovations, additions, and specialized construction services. Our team has expertise in both new construction and remodeling projects."
-    }
+      answer:
+        "We handle a wide range of construction projects including residential homes, commercial buildings, renovations, additions, and specialized construction services. Our team has expertise in both new construction and remodeling projects.",
+    },
   ];
 
   return (
@@ -97,10 +102,7 @@ const Contact = () => {
       >
         <div className="container">
           <div className="contact-grid">
-            <motion.div
-              className="contact-info"
-              variants={fadeIn}
-            >
+            <motion.div className="contact-info" variants={fadeIn}>
               <h2>Our Contact Information</h2>
               <div className="accent-line"></div>
 
@@ -113,12 +115,16 @@ const Contact = () => {
                   <motion.i
                     className="fas fa-map-marker-alt"
                     animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatDelay: 3,
+                    }}
                   ></motion.i>
                 </div>
                 <div className="info-content">
                   <h3>Office Location</h3>
-                  <p>123 Construction Way<br />Building City, BC 12345</p>
+                  <p>VJJF+87W VJJF+87W, Bengaluru, Karnataka</p>
                 </div>
               </motion.div>
 
@@ -131,12 +137,16 @@ const Contact = () => {
                   <motion.i
                     className="fas fa-phone"
                     animate={{ rotate: [0, 15, -15, 0] }}
-                    transition={{ duration: 1, repeat: Infinity, repeatDelay: 4 }}
+                    transition={{
+                      duration: 1,
+                      repeat: Infinity,
+                      repeatDelay: 4,
+                    }}
                   ></motion.i>
                 </div>
                 <div className="info-content">
                   <h3>Phone</h3>
-                  <p>(555) 123-4567</p>
+                  <p>+91 87627 85555</p>
                 </div>
               </motion.div>
 
@@ -149,7 +159,11 @@ const Contact = () => {
                   <motion.i
                     className="fas fa-envelope"
                     animate={{ y: [0, -5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3.5 }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      repeatDelay: 3.5,
+                    }}
                   ></motion.i>
                 </div>
                 <div className="info-content">
@@ -167,19 +181,26 @@ const Contact = () => {
                   <motion.i
                     className="fas fa-clock"
                     animate={{ rotate: [0, 360] }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                    transition={{
+                      duration: 10,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
                   ></motion.i>
                 </div>
                 <div className="info-content">
                   <h3>Working Hours</h3>
-                  <p>Monday - Friday: 8:00 AM - 5:00 PM<br />Saturday: 9:00 AM - 2:00 PM<br />Sunday: Closed</p>
+                  <p>
+                    Monday - Friday: 8:00 AM - 5:00 PM
+                    <br />
+                    Saturday: 9:00 AM - 2:00 PM
+                    <br />
+                    Sunday: Closed
+                  </p>
                 </div>
               </motion.div>
 
-              <motion.div
-                className="social-media"
-                variants={fadeIn}
-              >
+              <motion.div className="social-media" variants={fadeIn}>
                 <h3>Connect With Us</h3>
                 <div className="social-icons">
                   <motion.a
@@ -214,10 +235,7 @@ const Contact = () => {
               </motion.div>
             </motion.div>
 
-            <motion.div
-              className="contact-form-section"
-              variants={fadeIn}
-            >
+            <motion.div className="contact-form-section" variants={fadeIn}>
               <ContactForm />
             </motion.div>
           </div>
@@ -226,41 +244,41 @@ const Contact = () => {
 
       {/* Map Section */}
       <motion.section
-  className="map-section"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true, amount: 0.3 }}
-  variants={fadeIn}
->
-  <div className="container">
-    <motion.h2 variants={fadeIn}>Find Us</motion.h2>
-    <motion.div
-      className="accent-line"
-      initial={{ width: 0 }}
-      whileInView={{ width: 100 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-    ></motion.div>
+        className="map-section"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
+        <div className="container">
+          <motion.h2 variants={fadeIn}>Find Us</motion.h2>
+          <motion.div
+            className="accent-line"
+            initial={{ width: 0 }}
+            whileInView={{ width: 100 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          ></motion.div>
 
-    <motion.div
-      className="map-container"
-      variants={fadeIn}
-      whileHover={{ scale: 1.01 }}
-      transition={{ duration: 0.3 }}
-    >
-      <iframe
-        title="COBRIXA Construction Location"
-        src="https://www.google.com/maps?q=VJJF%2B87W+Bengaluru,+Karnataka&output=embed"
-        width="100%"
-        height="450"
-        style={{ border: 0, borderRadius: '12px' }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
-    </motion.div>
-  </div>
-</motion.section>
+          <motion.div
+            className="map-container"
+            variants={fadeIn}
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 0.3 }}
+          >
+            <iframe
+              title="COBRIXA Construction Location"
+              src="https://www.google.com/maps?q=VJJF%2B87W+Bengaluru,+Karnataka&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0, borderRadius: "12px" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </motion.div>
+        </div>
+      </motion.section>
 
       {/* FAQ Section with Accordion */}
       <motion.section
@@ -280,22 +298,16 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
           ></motion.div>
 
-          <motion.div
-            className="faq-container"
-            variants={fadeIn}
-          >
+          <motion.div className="faq-container" variants={fadeIn}>
             {faqItems.map((faq, index) => (
               <motion.div
                 key={index}
-                className={`faq-item ${expandedFaq === index ? 'active' : ''}`}
+                className={`faq-item ${expandedFaq === index ? "active" : ""}`}
                 variants={fadeIn}
                 custom={index}
                 whileHover={{ scale: expandedFaq === index ? 1 : 1.01 }}
               >
-                <div
-                  className="faq-question"
-                  onClick={() => toggleFaq(index)}
-                >
+                <div className="faq-question" onClick={() => toggleFaq(index)}>
                   <h3>{faq.question}</h3>
                   <motion.div
                     className="faq-icon"
@@ -311,7 +323,7 @@ const Contact = () => {
                     <motion.div
                       className="faq-answer"
                       initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
+                      animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >

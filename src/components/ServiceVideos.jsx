@@ -8,29 +8,29 @@ const ServiceVideos = () => {
       id: 1,
       title: "PC Construction: Residential Projects",
       description: "Explore our premium residential construction services and projects.",
-      videoSrc: "/videos/residential-construction.mp4",
-      thumbnail: "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=1000&auto=format&fit=crop"
+      videoSrc: "/public/videos/newone.mp4",
+      thumbnail: "/public/images/image1.webp"
     },
     {
       id: 2,
       title: "PC Construction: Commercial Buildings",
       description: "Our expertise in commercial construction and office buildings.",
-      videoSrc: "/videos/commercial-construction.mp4",
-      thumbnail: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+      videoSrc: "/public/videos/newtwo.mp4",
+      thumbnail: "/public/images/image2.png"
     },
     {
       id: 3,
       title: "PC Construction: Industrial Facilities",
       description: "Specialized construction for industrial and manufacturing facilities.",
-      videoSrc: "/videos/industrial-construction.mp4",
-      thumbnail: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop"
+      videoSrc: "/public/videos/newthree.mp4",
+      thumbnail: "/public/images/image3.webp"
     },
     {
       id: 4,
       title: "PC Construction: Renovation Services",
       description: "Expert renovation and remodeling services for all property types.",
-      videoSrc: "/videos/renovation-services.mp4",
-      thumbnail: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1000&auto=format&fit=crop"
+      videoSrc: "/public/videos/newfour.mp4",
+      thumbnail: "/public/images/image4.webp"
     }
   ];
 
